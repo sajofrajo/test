@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.hlavicka{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: orange;
+}
+.obsah_hlavicky{
+    width: 50%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 70px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: blue;
+}
+.right{
+    width: 50%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.clanok{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+}
+.obsahy{
+    display: flex;
+    flex-direction: row;
+}
+.obsah{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    background-color: brown;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: blueviolet;
+}
+@media screen and (max-width:768px) {
+    .holder{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .obsahy{
+        flex-direction: column;
+    }
+    .obsah{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .hlavicka{
+        position: absolute;
+        left: 999px;
+        top: 0;
+    }
+    .obsah_hlavicky{
+        height: 70px;
+        width: 100%;
+    }
+}
